@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { currenciesData } from '../../../data.js';
-import { setCurrency } from './currencyFilterSlice.js';
+import { setCurrency } from './currencyFilterSlice';
 
 export const CurrencyFilter = ({ currencyFilter, dispatch }) => {
   const onClickHandler = (currency) => {

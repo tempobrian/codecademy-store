@@ -3,8 +3,8 @@ import React, { useEffect } from 'react';
 import {
   calculatePrice,
   getCurrencySymbol,
-} from '../../utilities/utilities.js';
-import { addItem } from '../cart/cartSlice.js';
+} from '../../utilities/utilities';
+import { addItem } from '../cart/cartSlice';
 import { loadData } from './inventorySlice';
 
 export const Inventory = ({ inventory, currencyFilter, dispatch }) => {
