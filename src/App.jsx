@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Inventory } from './features/inventory/Inventory.js';
-import { CurrencyFilter } from './features/currencyFilter/CurrencyFilter.js';
+import { Inventory } from './features/inventory/Inventory';
+import { CurrencyFilter } from './features/currencyFilter/CurrencyFilter';
 
-// Import the Cart component here.
+import { Cart } from './features/cart/Cart';
 
 // Render the Cart component below <Inventory />
 export const App = (props) => {
@@ -22,7 +22,11 @@ export const App = (props) => {
         currencyFilter={state.currencyFilter}
         dispatch={dispatch}
       />
-
+      <Cart
+        cart={state.cart}
+        currencyFilter={state.currencyFilter}
+        dispatch={dispatch}
+      />
     </div>
   );
 };

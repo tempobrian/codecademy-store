@@ -2,7 +2,7 @@ import React from 'react';
 import {
   calculateTotal,
   getCurrencySymbol,
-} from '../../utilities/utilities.js';
+} from '../../utilities/utilities';
 
 // Import the changeItemQuantity() action creator.
 
